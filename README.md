@@ -10,12 +10,14 @@ url_service_status_InfluxDB_insert.py is used to grab the status data of all ser
 
 # Prerequisites
 
+host OS metric data ETL:
 Python 3.9+ recommended
 - Requests, urllib3, pandas, pyodbc
 Connectivity to Nagios server API and sql server
 
-install Python deps:
-python -m pip install requests pandas pyodbc urllib3
-
+URL nagios status to influx ETL:
+Python3.9+ recommended
+- Requests, urllib3, datetime, influxdbclient, logging, csv
+Connectivity to nagios server API and influxDB 
 
 
