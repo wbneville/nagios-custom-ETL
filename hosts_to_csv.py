@@ -36,7 +36,7 @@ for i in range (0, records):
 	# count of how many host are in a certain hostgroup
 	hostgroup_length = len(hosts)
 
-	#iterate through each host in the host group and save to dataframe, but omit LINUX_DEFAULT group
+	#iterate through each host in the host group and save to dataframe
 	if (hostgroup in ("hostgroup1","hostgroup2") ):
 		for j in range (0, hostgroup_length):
 			hg_df.loc[index, ['Host Group']] = hostgroup
